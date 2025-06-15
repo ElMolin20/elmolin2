@@ -65,11 +65,24 @@ a {
   border-radius: 12px;
   display: inline-block;
 }
-
 #galeria img {
   width: 30%;
   max-width: 300px;
   margin: 10px;
   border-radius: 12px;
   display: inline-block;
+}
+.galeria-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.galeria-grid img {
+  width: 30%;
+  max-width: 300px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 12px;
 }
