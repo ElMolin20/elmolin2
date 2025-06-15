@@ -112,12 +112,11 @@ a {
   }
 }
 
-.logo {
-  width: 200px;
+.animado-logo {
   animation: fadeUp 1s ease-out forwards;
 }
 
-.header-animado {
+.animado-frase {
   opacity: 0;
   animation: fadeUp 1s ease-out forwards;
   animation-delay: 0.5s;
