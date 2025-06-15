@@ -175,6 +175,12 @@ nav ul li a:hover::after {
   color: white;
   cursor: pointer;
 }
+/* ----- SEPARACIÓN ENTRE APARTADOS ----- */
+section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 /* ----- RESPONSIVE PARA MÓVILES ----- */
 @media (max-width: 768px) {
   body {
@@ -218,5 +224,10 @@ nav ul li a:hover::after {
   .reserva-btn {
     font-size: 16px;
     padding: 10px 20px;
+  }
+
+  section {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
