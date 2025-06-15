@@ -121,3 +121,30 @@ a {
   animation: fadeUp 1s ease-out forwards;
   animation-delay: 0.5s;
 }
+nav ul li a {
+  color: #F2C94C;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #F2C94C;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
