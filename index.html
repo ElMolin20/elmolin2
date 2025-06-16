@@ -8,6 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+  <!-- AOS Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  // Duración de la animación en milisegundos
+    once: true       // Solo se anima una vez
+  });
+</script>
 <body>
   <header>
   <img src="logo.jpeg" alt="Logo El Molín 2.0" class="logo animado-logo">
@@ -27,7 +35,7 @@
   </nav>
 
   <main>
-    <section id="ofrecemos">
+    <section id="ofrecemos" data-aos="fade-up">
       <h2>¿Qué ofrecemos?</h2>
       <ul>
         <li>🚗 Parking privado</li>
@@ -40,7 +48,7 @@
       </ul>
     </section>
     
-  <section id="reservas">
+  <section id="reservas" data-aos="fade-right">
   <h2>📅 Reservas</h2>
   <p>Haz tu reserva de forma rápida y sencilla:</p>
   <a href="https://wa.me/34667696002?text=Hola%2C%20quiero%20reservar%20en%20El%20Mol%C3%ADn%202.0%20para..." target="_blank">
@@ -49,7 +57,7 @@
   <p style="margin-top: 10px;">También puedes llamarnos: <strong>984 569 122</strong> o <strong>667 696 002</strong></p>
 </section>
 
-  <section id="contacto">
+  <section id="contacto" data-aos="fade-left">
   <h2>📞 Contacto</h2>
   <p>📍 Valle de Cuna y Cenera — MI-4, 3 – 33615 Mieres, Asturias</p>
   <p>📞 Teléfono fijo: 984 569 122</p>
@@ -58,19 +66,19 @@
   <p>📸 Instagram: <a href="https://instagram.com/elmolin2.0" target="_blank">@elmolin2.0</a></p>
 
 </section>
-    <section id="carta">
+    <section id="carta" data-aos="zoom-in">
   <h2>🍽️ Carta de comida</h2>
   <img src="carta-comida-1.jpeg" alt="Carta comida 1" class="menu-img">
   <img src="carta-comida-2.jpeg" alt="Carta comida 2" class="menu-img">
 </section>
 
-<section id="vinos">
+<section id="vinos" data-aos="zoom-in">
   <h2>🍷 Carta de vinos</h2>
   <img src="carta-vinos-1.jpeg" alt="Carta vinos 1" class="menu-img">
   <img src="carta-vinos-2.jpeg" alt="Carta vinos 2" class="menu-img">
 </section>
 
-    <section id="galeria">
+    <section id="galeria" data-aos="fade-up">
   <h2>📸 Galería</h2>
   <div class="galeria-grid">
     <img src="foto1.jpeg" alt="Foto 1">
