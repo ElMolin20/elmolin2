@@ -21,34 +21,21 @@
     <a href="https://facebook.com/elmolin2.0" target="_blank"><i class="fab fa-facebook-f"></i></a>
   </div>
 </footer>
-  <!-- Botón de Volver Arriba -->
-<button id="btn-top" title="Volver arriba">⬆️</button>
-  <script>
-  // Mostrar u ocultar el botón según el scroll
-  window.onscroll = function() {
-    const btn = document.getElementById("btn-top");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      btn.style.display = "block";
-    } else {
-      btn.style.display = "none";
-    }
-  };
-
-  // Al hacer clic, volver arriba
-  document.getElementById("btn-top").addEventListener("click", function(){
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-</script>
-  <!-- Botón de WhatsApp flotante -->
-<a href="https://wa.me/34667696002?text=Hola%2C%20quiero%20reservar%20en%20El%20Mol%C3%ADn%202.0%20para..." 
-   class="whatsapp-float" 
-   target="_blank" 
-   title="Reserva por WhatsApp">
+ <!-- Botón de WhatsApp flotante -->
+<a href="https://wa.me/34667696002?text=Hola%2C%20quiero%20reservar%20en%20El%20Mol%C3%ADn%202.0" class="whatsapp-float" target="_blank">
   💬
 </a>
+
+<!-- Botón de subir -->
+<button id="btnSubir" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+  ⬆️
+</button>
+  <script>
+  const btnSubir = document.getElementById("btnSubir");
+  window.addEventListener("scroll", () => {
+    btnSubir.style.display = window.scrollY > 200 ? "block" : "none";
+  });
+</script>
 <body>
   <header>
     <img src="logo.jpeg" alt="Logo El Molín 2.0" class="logo animado-logo" data-aos="fade-down">
