@@ -253,7 +253,7 @@ section {
 .mapa-contenedor {
   width: 100%;
   max-width: 800px;
-  margin: 30px auto;
+  margin: 40px auto;
   border: 4px solid #F2C94C;
   border-radius: 12px;
   overflow: hidden;
