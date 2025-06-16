@@ -260,12 +260,16 @@ section {
 }
 #horario {
   margin-top: 60px;
-  text-align: center;
   padding-bottom: 40px;
+}
+
+#horario h2 {
+  text-align: left;
 }
 
 .texto-horario {
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 10px;
   line-height: 1.6;
+  text-align: left;
 }
