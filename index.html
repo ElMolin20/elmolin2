@@ -1,36 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>El Molín 2.0</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <!-- AOS CSS -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Fuente Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- AOS Animaciones -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
-  <!-- AOS Script -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000,  // Duración de la animación en milisegundos
-    once: true       // Solo se anima una vez
-  });
-</script>
-  <!-- AOS JS -->
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 1000, // duración en milisegundos
-    once: true      // la animación ocurre una sola vez
-  });
-</script>
 <body>
   <header>
-  <img src="logo.jpeg" alt="Logo El Molín 2.0" class="logo animado-logo">
-  <h1 class="animado-frase">Con nombre moderno, pero el alma de siempre.</h1>
-</header>
+    <img src="logo.jpeg" alt="Logo El Molín 2.0" class="logo animado-logo" data-aos="fade-down">
+    <h1 class="animado-frase" data-aos="fade-up">Con nombre moderno, pero el alma de siempre.</h1>
+  </header>
 
   <nav>
     <ul>
@@ -40,7 +26,6 @@
       <li><a href="#carta">Carta</a></li>
       <li><a href="#vinos">Vinos</a></li>
       <li><a href="#galeria">Galería</a></li>
-
     </ul>
   </nav>
 
@@ -57,71 +42,86 @@
         <li>🌿 Amplio terreno</li>
       </ul>
     </section>
-    
-  <section id="reservas" data-aos="fade-right">
-  <h2>📅 Reservas</h2>
-  <p>Haz tu reserva de forma rápida y sencilla:</p>
-  <a href="https://wa.me/34667696002?text=Hola%2C%20quiero%20reservar%20en%20El%20Mol%C3%ADn%202.0%20para..." target="_blank">
-    <button class="reserva-btn">Reservar por WhatsApp</button>
-  </a>
-  <p style="margin-top: 10px;">También puedes llamarnos: <strong>984 569 122</strong> o <strong>667 696 002</strong></p>
-</section>
 
-  <section id="contacto" data-aos="fade-left">
-  <h2>📞 Contacto</h2>
-  <p>📍 Valle de Cuna y Cenera — MI-4, 3 – 33615 Mieres, Asturias</p>
-  <p>📞 Teléfono fijo: 984 569 122</p>
-  <p>📱 WhatsApp: 667 696 002</p>
-  <p>📧 Correo: <a href="mailto:elmolin2.0res@gmail.com">elmolin2.0res@gmail.com</a></p>
-  <p>📸 Instagram: <a href="https://instagram.com/elmolin2.0" target="_blank">@elmolin2.0</a></p>
+    <section id="reservas" data-aos="fade-right">
+      <h2>📅 Reservas</h2>
+      <p>Haz tu reserva de forma rápida y sencilla:</p>
+      <a href="https://wa.me/34667696002?text=Hola%2C%20quiero%20reservar%20en%20El%20Mol%C3%ADn%202.0%20para..." target="_blank">
+        <button class="reserva-btn">Reservar por WhatsApp</button>
+      </a>
+      <p style="margin-top: 10px;">También puedes llamarnos: <strong>984 569 122</strong> o <strong>667 696 002</strong></p>
+    </section>
 
-</section>
-    <section id="carta" data-aos="zoom-in">
-  <h2>🍽️ Carta de comida</h2>
-  <img src="carta-comida-1.jpeg" alt="Carta comida 1" class="menu-img">
-  <img src="carta-comida-2.jpeg" alt="Carta comida 2" class="menu-img">
-</section>
+    <section id="contacto" data-aos="fade-left">
+      <h2>📞 Contacto</h2>
+      <p>📍 Valle de Cuna y Cenera — MI-4, 3 – 33615 Mieres, Asturias</p>
+      <p>📞 Teléfono fijo: 984 569 122</p>
+      <p>📱 WhatsApp: 667 696 002</p>
+      <p>📧 Correo: <a href="mailto:elmolin2.0res@gmail.com">elmolin2.0res@gmail.com</a></p>
+      <p>📸 Instagram: <a href="https://instagram.com/elmolin2.0" target="_blank">@elmolin2.0</a></p>
+    </section>
 
-<section id="vinos" data-aos="zoom-in">
-  <h2>🍷 Carta de vinos</h2>
-  <img src="carta-vinos-1.jpeg" alt="Carta vinos 1" class="menu-img">
-  <img src="carta-vinos-2.jpeg" alt="Carta vinos 2" class="menu-img">
-</section>
+    <section id="carta" data-aos="fade-up">
+      <h2>🍽️ Carta de comida</h2>
+      <img src="carta-comida-1.jpeg" alt="Carta comida 1" class="menu-img">
+      <img src="carta-comida-2.jpeg" alt="Carta comida 2" class="menu-img">
+    </section>
 
-    <section id="galeria" data-aos="fade-up">
-  <h2>📸 Galería</h2>
-  <div class="galeria-grid">
-    <img src="foto1.jpeg" alt="Foto 1">
-    <img src="foto2.jpeg" alt="Foto 2">
-    <img src="foto4.jpeg" alt="Foto 4">
-    <img src="foto5.jpeg" alt="Foto 5">
-    <img src="foto6.jpeg" alt="Foto 6">
-    <img src="foto7.jpeg" alt="Foto 7">
-    <img src="foto8.jpeg" alt="Foto 8">
+    <section id="vinos" data-aos="fade-up">
+      <h2>🍷 Carta de vinos</h2>
+      <img src="carta-vinos-1.jpeg" alt="Carta vinos 1" class="menu-img">
+      <img src="carta-vinos-2.jpeg" alt="Carta vinos 2" class="menu-img">
+    </section>
+
+    <section id="galeria" data-aos="zoom-in">
+      <h2>📸 Galería</h2>
+      <div class="galeria-grid">
+        <img src="foto1.jpeg" alt="Foto 1">
+        <img src="foto2.jpeg" alt="Foto 2">
+        <img src="foto4.jpeg" alt="Foto 4">
+        <img src="foto5.jpeg" alt="Foto 5">
+        <img src="foto6.jpeg" alt="Foto 6">
+        <img src="foto7.jpeg" alt="Foto 7">
+        <img src="foto8.jpeg" alt="Foto 8">
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox para ampliar imágenes -->
+  <div id="lightbox" class="lightbox">
+    <span class="cerrar">&times;</span>
+    <img class="lightbox-img" id="img-ampliada">
   </div>
-</section>
-<div id="lightbox" class="lightbox">
-  <span class="cerrar">&times;</span>
-  <img class="lightbox-img" id="img-ampliada">
-</div>
 
-<script>
-  const lightbox = document.getElementById("lightbox");
-  const imgAmpliada = document.getElementById("img-ampliada");
-  const cerrar = document.querySelector(".cerrar");
+  <!-- Script Lightbox -->
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const imgAmpliada = document.getElementById("img-ampliada");
+    const cerrar = document.querySelector(".cerrar");
 
-  document.querySelectorAll("img").forEach(img => {
-    img.addEventListener("click", () => {
-      imgAmpliada.src = img.src;
-      lightbox.style.display = "flex";
+    document.querySelectorAll("img").forEach(img => {
+      img.addEventListener("click", () => {
+        imgAmpliada.src = img.src;
+        lightbox.style.display = "flex";
+      });
     });
-  });
 
-  cerrar.addEventListener("click", () => {
-    lightbox.style.display = "none";
-  });
+    cerrar.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
 
-  lightbox.addEventListener("click", e => {
-    if (e.target === lightbox) lightbox.style.display = "none";
-  });
-</script>
+    lightbox.addEventListener("click", e => {
+      if (e.target === lightbox) lightbox.style.display = "none";
+    });
+  </script>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
