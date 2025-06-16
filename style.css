@@ -324,7 +324,7 @@ footer {
 }
 .whatsapp-float {
   position: fixed;
-  bottom: 20px;
+  bottom: 80px; /* ← antes estaba en 20px, lo subimos */
   right: 20px;
   background-color: #25D366;
   color: white;
