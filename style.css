@@ -7,12 +7,8 @@ body {
   margin: 0;
   padding: 0 20px;
 }
-}
-}
-}
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
-}
 }
 header {
   text-align: center;
@@ -33,11 +29,9 @@ nav ul {
   max-width: 90%;
   gap: 12px;
 }
-}
 nav ul li {
   margin: 0 18px;
   display: inline-block;
-}
 }
 nav ul li a {
   color: #F2C94C;
@@ -272,4 +266,14 @@ section {
   margin-top: 10px;
   line-height: 1.6;
   text-align: left;
+}
+section::before {
+  content: "";
+  display: block;
+  height: 100px; /* altura del espacio que queremos dejar */
+  margin-top: -100px; /* el negativo para compensar */
+  visibility: hidden;
+}
+html {
+  scroll-behavior: smooth;
 }
