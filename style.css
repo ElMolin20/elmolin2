@@ -34,7 +34,9 @@ nav ul {
 }
 }
 nav ul li {
-  margin: 0 15px;
+  margin: 0 18px;
+  display: inline-block;
+}
 }
 nav ul li a {
   color: #F2C94C;
