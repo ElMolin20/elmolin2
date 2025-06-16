@@ -258,3 +258,14 @@ section {
   border-radius: 12px;
   overflow: hidden;
 }
+#horario {
+  margin-top: 60px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.texto-horario {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 1.6;
+}
